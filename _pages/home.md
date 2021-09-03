@@ -1,12 +1,12 @@
 ---
-title: "Allan Lab - Home"
+title: "LIQ - Home"
 layout: homelay
-excerpt: "Allan Lab at Leiden University."
+excerpt: "LIQ @ ULB."
 sitemap: false
 permalink: /
 ---
 
-We are a dynamic research group at the [Leiden Institute of Physics](http://www.physics.leidenuniv.nl). Our aim is to explore and understand [quantum materials](http://condensedconcepts.blogspot.nl/2013/05/what-is-quantum-matter.html), including strange metals, high-temperature superconductors, and quantum critical electron matter.
+We are a research group at the [Université libre de Bruxelles](http://www.ulb.be). Our aim is to explore and understand [quantum materials](http://condensedconcepts.blogspot.nl/2013/05/what-is-quantum-matter.html), including strange metals, high-temperature superconductors, and quantum critical electron matter.
 
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
