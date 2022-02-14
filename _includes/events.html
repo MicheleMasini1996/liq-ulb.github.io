@@ -1,0 +1,22 @@
+
+<div class="well">
+<h4>Events and seminars</h4>
+
+{% for article in site.data.events limit:9 %}
+<p>
+  {{ article.date }} <br />
+  <i>
+  {% if article.url %}
+  <a href="{{ article.url }}">{{ article.title }}</a>
+  {% else %}
+  {{ article.title }}
+  {% endif %}
+  </i>
+  <br />
+  {{ article.author }}
+</p>
+{% endfor %}
+
+<h4><a href="{{ site.url }}{{ site.baseurl }}/allevents.html">... see all events</a></h4>
+
+</div>
