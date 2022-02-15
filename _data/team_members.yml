@@ -1,75 +1,63 @@
 - name: Serge Massar
   photo: serge.jpg
   info: Professor
-  email:
-  number_educ: 0
-  education1: PhD
+  identifier: serge.massar
 
 - name: Stefano Pironio
   photo: stefano.jpg
   info: Professor
-  email:
-  number_educ: 0
-  education1: PhD
+  identifier: stefano.pironio
 
 - name: Stéphane Clemmen
   photo: stephane.jpg
   info: Professor
-  email:
-  number_educ: 0
-  education1: PhD
+  identifier: stephane.clemmen
+  scholar: 46hhUJAAAAAJ
 
 - name: Erik Woodhead
   photo: erik.jpg
   info: Postdoc
-  email:
-  number_educ: 0
-  education1: PhD
+  identifier: erik.woodhead
+  arxiv: woodhead_e_1
+  scholar: 7eZJbT8AAAAJ
+  github: ewoodhead
+  orcid: 0000-0001-7696-4461
 
 - name: Timothé David
   photo: timothe.jpg
   info: PhD student
-  email:
-  number_educ: 0
-  education1: Master
+  identifier: timothe.david
 
 - name: Alessandro Lupo
   photo:
   info: PhD student
-  email:
-  number_educ: 0
-  education1:
+  identifier: alessandro.lupo
 
 - name: Michele Masini
   photo: michele.png
   info: PhD student
-  email:
-  number_educ: 0
-  education1:
+  identifier: michele.masini
+  arxiv: masini_m_1
+  scholar: I1MBODYAAAAJ
+  github: MicheleMasini1996
+  orcid: 0000-0001-9965-7157
 
 - name: Romain Morleghem
   photo: romain.jpg
   info: PhD student
-  email:
-  number_educ: 0
-  education1: Master
+  identifier: romain.morleghem
 
 - name: Jef Pauwels
   photo: brad.jpg
   info: PhD student
-  email:
-  number_educ: 0
-  education1:
+  identifier: jef.pauwels
 
 - name: Enrico Picco
   photo: enrico.jpg
   info: PhD student
-  email:
-  number_educ: 0
-  education1:
+  identifier: enrico.picco
 
 - name: Samara Hussain
   photo: samara.jpg
   info: Secretary
-  email:
-  number_educ: 0
+  identifier: samara.hussain

@@ -6,7 +6,7 @@ sitemap: false
 permalink: /
 ---
 
-We are a research group at the [Université libre de Bruxelles](http://www.ulb.be).
+We are a research group at the [Université libre de Bruxelles](http://www.ulb.be), working on quantum information and bio-inspired information processing, both at the theoretical and experimental level
 
 <figure>
 <center>
@@ -14,4 +14,6 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
 </center>
 </figure><br />
 
-Manipulating information at the quantum level is profoundly different from manipulating it classically. This opens the door to some new and surprising applications such as quantum cryptography (in which the security of the encryption of a message is guaranteed by the laws of physics) or quantum computers (which could solve certain problems such as factoring exponentially faster than classical computers). The Laboratoire d’Information quantique is actively working on different aspects quantum information, both at the theoretical and experimental level.
+On the theory side, we are interested in many aspects of quantum information, including quantum correlations, quantum cryptography, and quantum foundations. On the experimental side, we focus on the development and manipulation of novel sources of entangled photons, both in fibers and in silicon waveguides. We also develop bio-inspired photonic processing systems, such as reservoir computing.
+
+We are part of the Physics Department of ULB. We exchange ideas and work with our colleagues from the [Center for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be/) and [OPERA-Photonique](http://www.ulb.ac.be/polytech/soa/index.html).

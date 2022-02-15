@@ -23,41 +23,10 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
-
-  </ul>
+  <h4>{% if member.page %}<a href="{{ site.url }}{{ site.baseurl }}/{{ member.page }}/">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h4>
+  <i>{{ member.info }}</i>
+  {% if member.identifier %}
+  <a href="mailto:{{ member.identifier }}@ulb.be"><i class="fas fa-envelope-square fa-2x"></i></a>{% endif %} {% if member.arxiv %}<a href="https://arxiv.org/a/{{ member.arxiv }}"><i class="ai ai-arxiv-square fa-2x"></i></a>{% endif %} {% if member.scholar %}<a href="https://scholar.google.com/citations?hl=en&user={{ member.scholar }}"><i class="ai ai-google-scholar-square fa-2x"></i></a>{% endif %} {% if member.github %}<a href="https://github.com/{{ member.github }}"><i class="fa-brands fa-github-square fa-2x"></i></a>{% endif %} {% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}"><i class="ai ai-orcid-square fa-2x"></i></a>{% endif %}
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
