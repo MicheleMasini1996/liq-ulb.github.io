@@ -9,7 +9,7 @@ permalink: /teaching
 ## Courses
 
 PHYS-F-110 Physique Générale I et II
-: Serge Massar, Pascal Vanlaer and Michele Sferrazza
+: Serge Massar, Pascal Vanlaer, and Michele Sferrazza
 
 PHYS-F-509 Quantum Information Theory
 : Stefano Pironio
@@ -18,7 +18,7 @@ PHYS-F-203 Mécanique quantique
 : Pascal Nardone and Serge Massar
 
 PHYS-F-210 Laboratoires, statistique appliquée à la physique expérimentale, et projet
-: Stefano Pironio, Juan-Antonio Aguilar Sanchez, Pasquale Nardone, Dimitri Pourbaix
+: Stefano Pironio, Juan-Antonio Aguilar Sanchez, Pasquale Nardone, and Dimitri Pourbaix
 
 PHYS-F-443 Stage et pratique réflexive I
 : Serge Massar and Bernard Knaepen

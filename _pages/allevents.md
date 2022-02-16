@@ -15,14 +15,19 @@ permalink: /allevents.html
 <p style="margin-left: 40px">
 {% if article.title %}
 <i>
-{% if article.url %}
-<a href="{{ article.url }}">{{ article.title }}</a>
+{% assign title = article.title %}
 {% else %}
-{{ article.title }}
+{% assign title = "TBA" %}
 {% endif %}
+{% if article.url %}
+<a href="{{ article.url }}">{{ title }}</a>
+{% else %}
+{{ title }}
+{% endif %}
+{% if article.title %}
 </i>
-<br />
 {% endif %}
+<br />
 {{ article.author }}
 </p>
 
