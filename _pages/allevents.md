@@ -10,9 +10,10 @@ permalink: /allevents.html
 
 {% for article in site.data.events %}
 
-<p>{{ article.date }}</p>
+<p>{{ article.date }}{% if article.time %}, {{ article.time }}{% endif %}</p>
 
 <p style="margin-left: 40px">
+{% if article.title %}
 <i>
 {% if article.url %}
 <a href="{{ article.url }}">{{ article.title }}</a>
@@ -21,6 +22,7 @@ permalink: /allevents.html
 {% endif %}
 </i>
 <br />
+{% endif %}
 {{ article.author }}
 </p>
 

@@ -5,6 +5,7 @@
 {% for article in site.data.events limit:9 %}
 <p>
   {{ article.date }} <br />
+  {% if article.title %}
   <i>
   {% if article.url %}
   <a href="{{ article.url }}">{{ article.title }}</a>
@@ -13,6 +14,7 @@
   {% endif %}
   </i>
   <br />
+  {% endif %}
   {{ article.author }}
 </p>
 {% endfor %}
