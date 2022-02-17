@@ -31,12 +31,15 @@
   identifier: timothe.david
 
 - name: Alessandro Lupo
-  photo:
+  photo: alessandro.jpg
   info: PhD student
   identifier: alessandro.lupo
+  scholar: N6OeIBIAAAAJ
+  linkedin: alessandro-lupo
+  orcid: 0000-0002-5541-7140
 
 - name: Michele Masini
-  photo: michele.png
+  photo: michele.jpg
   info: PhD student
   identifier: michele.masini
   arxiv: masini_m_1

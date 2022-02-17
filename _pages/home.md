@@ -13,35 +13,30 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
   <!-- Menu -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
-    <li data-target="#carousel" data-slide-to="3"></li>
-    <li data-target="#carousel" data-slide-to="4"></li>
-    <li data-target="#carousel" data-slide-to="5"></li>
-    <li data-target="#carousel" data-slide-to="6"></li>
+    {% assign slide_number = 0 %}
+    {% for image in site.data.home_slider %}
+    {% if slide_number == 0 %}
+    <li data-target="#carousel" data-slide-to="{{ slide_number }}" class="active"></li>
+    {% else %}
+    <li data-target="#carousel" data-slide-to="{{ slide_number }}"></li>
+    {% endif %}
+    {% assign slide_number = slide_number | plus: 1 %}
+    {% endfor %}
   </ol>
 
   <!-- Items -->
   <div class="carousel-inner" markdown="0">
+    {% assign slide_number = 0 %}
+    {% for image in site.data.home_slider %}
+    {% if slide_number == 0 %}
     <div class="item active">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/ulb-rain.jpg">
-    </div>
+    {% else %}
     <div class="item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/ulb-rain.jpg">
+    {% endif %}
+      <img src="{{ site.url }}{{ site.baseurl }}/images/home/{{ image.name }}">
     </div>
-    <div class="item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/ulb-rain.jpg">
-    </div>
-    <div class="item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/ulb-rain.jpg">
-    </div>
-    <div class="item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/ulb-rain.jpg">
-    </div>
-    <div class="item">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/ulb-rain.jpg">
-    </div>
+    {% assign slide_number = slide_number | plus: 1 %}
+    {% endfor %}
   </div>
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
