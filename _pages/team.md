@@ -25,10 +25,7 @@ permalink: /team/
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
   <h4>{% if member.page %}<a href="{{ site.url }}{{ site.baseurl }}/{{ member.page }}/">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h4>
   <i>{{ member.info }}</i><br />
-  {%if member.page %}<a href="{{ site.url }}{{ site.baseurl }}/{{ member.page }}/"><span class="fa-stack fa-1x fa-stacked" style="display: inline-block; vertical-align: top;">
-    <i class="fas fa-square fa-stack-2x"></i>
-    <i class="fas fa-home fa-stack-1x fa-stack-inner fa-inverse"></i>
-  </span></a>{% endif %} {% if member.identifier %}<a href="mailto:{{ member.identifier }}@ulb.be"><i class="fas fa-envelope-square fa-2x"></i></a>{% endif %} {% if member.arxiv %}<a href="https://arxiv.org/a/{{ member.arxiv }}"><i class="ai ai-arxiv-square fa-2x"></i></a>{% endif %} {% if member.scholar %}<a href="https://scholar.google.com/citations?hl=en&user={{ member.scholar }}"><i class="ai ai-google-scholar-square fa-2x"></i></a>{% endif %} {% if member.github %}<a href="https://github.com/{{ member.github }}"><i class="fa-brands fa-github-square fa-2x"></i></a>{% endif %} {% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}"><i class="ai ai-orcid-square fa-2x"></i></a>{% endif %}
+  {%if member.page %}<a href="{{ site.url }}{{ site.baseurl }}/{{ member.page }}/"><span class="fa-stack fa-1x" style="vertical-align: top;"><i class="fas fa-square fa-stack-2x"></i><i class="fas fa-home fa-stack-1x fa-stack-inner fa-inverse"></i></span></a>{% endif %} {% if member.identifier %}<a href="mailto:{{ member.identifier }}@ulb.be"><i class="fas fa-envelope-square fa-2x"></i></a>{% endif %} {% if member.arxiv %}<a href="https://arxiv.org/a/{{ member.arxiv }}"><i class="ai ai-arxiv-square fa-2x"></i></a>{% endif %} {% if member.scholar %}<a href="https://scholar.google.com/citations?hl=en&user={{ member.scholar }}"><i class="ai ai-google-scholar-square fa-2x"></i></a>{% endif %} {% if member.github %}<a href="https://github.com/{{ member.github }}"><i class="fa-brands fa-github-square fa-2x"></i></a>{% endif %} {% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}"><i class="ai ai-orcid-square fa-2x"></i></a>{% endif %}
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
