@@ -1,6 +1,7 @@
 - name: Serge Massar
   photo: serge.jpg
   info: Professor
+  page: serge_massar
   identifier: serge.massar
 
 - name: Stefano Pironio
@@ -11,6 +12,7 @@
 - name: Stéphane Clemmen
   photo: stephane.jpg
   info: Professor
+  page: stephane_clemmen
   identifier: stephane.clemmen
   scholar: 46hhUJAAAAAJ
 
