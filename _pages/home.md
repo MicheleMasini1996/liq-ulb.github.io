@@ -33,7 +33,7 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
     {% else %}
     <div class="item">
     {% endif %}
-      <img class="centerd-image" src="{{ site.url }}{{ site.baseurl }}/images/home/{{ image.name }}" style="height: 350px">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/home/{{ image.name }}" style="height: 350px">
     </div>
     {% assign slide_number = slide_number | plus: 1 %}
     {% endfor %}
