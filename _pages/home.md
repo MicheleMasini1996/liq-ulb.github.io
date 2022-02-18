@@ -31,9 +31,9 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
     {% if slide_number == 0 %}
     <div class="item active">
     {% else %}
-    <div class="item">
+    <div class="item" style="align-content: center">
     {% endif %}
-      <img src="{{ site.url }}{{ site.baseurl }}/images/home/{{ image.name }}" style="height: 350px" class="center">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/home/{{ image.name }}" style="height: 350px">
     </div>
     {% assign slide_number = slide_number | plus: 1 %}
     {% endfor %}
