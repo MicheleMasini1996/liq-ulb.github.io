@@ -1,30 +1,3 @@
-- name: Serge Massar
-  photo: serge.jpg
-  info: Professor
-  page: serge_massar
-  identifier: serge.massar
-
-- name: Stefano Pironio
-  photo: stefano.jpg
-  info: Professor
-  identifier: stefano.pironio
-
-- name: Stéphane Clemmen
-  photo: stephane.jpg
-  info: Professor
-  page: stephane_clemmen
-  identifier: stephane.clemmen
-  scholar: 46hhUJAAAAAJ
-
-- name: Erik Woodhead
-  photo: erik.jpg
-  info: Postdoc
-  identifier: erik.woodhead
-  arxiv: woodhead_e_1
-  scholar: 7eZJbT8AAAAJ
-  github: ewoodhead
-  orcid: 0000-0001-7696-4461
-
 - name: Timothé David
   photo: timothe.jpg
   info: PhD student
@@ -61,8 +34,3 @@
   photo: enrico.jpg
   info: PhD student
   identifier: enrico.picco
-
-- name: Samara Hussain
-  photo: samara.jpg
-  info: Secretary
-  identifier: samara.hussain
