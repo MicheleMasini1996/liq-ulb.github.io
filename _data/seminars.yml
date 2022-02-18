@@ -1,0 +1,272 @@
+- date: "2022-02-18T13:00:00"
+  end: false
+  speaker: "Laurens Lootens"
+  affiliation: "Ghent University"
+  title: "Dualities in one-dimensional quantum lattice models with categorical symmetries: Hamiltonians and intertwiners"
+  type: "lunchtalk"
+
+- date: "2022-01-28T13:00:00"
+  end: false
+  speaker: "Pan Zhang"
+  affiliation: "Institute of Theoretical Physics, Chinese Academy of Sciences"
+  title: "Simulation of the Sycamore quantum circuits with tensor networks"
+  type: "lunchtalk"
+  
+- date: "2022-01-21T13:00:00"
+  end: false
+  speaker: "Nick Bultinck"
+  affiliation: "Ghent University, Rudolf Peierls Centre for Theoretical Physics"
+  title: "Hawking radiation in the Hamiltonian formalism and on the lattice"
+  type: "lunchtalk"
+
+- date: "2022-01-07T13:00:00"
+  end: false
+  speaker: "Ruben Verresen"
+  affiliation: "Harvard University"
+  title: "Non-Abelian Topological Order and Fractons from Measuring Symmetry-Protected Topological Phases"
+  type: "lunchtalk"
+  
+- date: "2021-12-10T13:00:00"
+  end: false
+  speaker: "Evan Salim"
+  affiliation: "Director of Quantum Technologies at ColdQuanta"
+  title: "Preparing for (and surviving) the quantum revolution"
+  type: "lunchtalk"
+
+- date: "2021-12-03T13:00:00"
+  end: false
+  speaker: "Jacob Bridgeman"
+  affiliation: "Ghent University"
+  title: "A Brief Review of Quantum Error Correction"
+  type: "lunchtalk"
+
+- date: "2021-11-26T13:00:00"
+  end: false
+  speaker: "Erez Zohar"
+  affiliation: "University of Jerusalem"
+  title: "Approximating Relativistic Quantum Field Theories with Continuous Tensor Networks"
+  type: "lunchtalk"
+
+- date: "2021-11-19T13:00:00"
+  end: false
+  speaker: "Michaël Mariën"
+  affiliation: "KBC Bank & Verzekering"
+  title: "Causality and Machine Learning"
+  type: "lunchtalk"
+
+- date: "2021-11-05T13:00:00"
+  end: false
+  speaker: "Linnea Grans-Samuelsson"
+  affiliation: "Université Paris-Saclay"
+  title: "Discretizing 2d conformal field theories: the lattice action of the conformal algebra"
+  type: "lunchtalk"
+
+- date: "2021-10-22T09:00:00"
+  end: false
+  speaker: "Mark Arildson"
+  affiliation: "UC Santa Barbara"
+  title: "Generalized Gibbs Ensemble Description of Real Space Entanglement Spectra of (2+1)-dimensional Chiral Topological Systems with SU(2) Symmetry"
+  type: "lunchtalk"
+
+- date: "2021-10-15T13:00:00"
+  end: false
+  speaker: "Gerardo Ortiz"
+  affiliation: "Indiana Unviersity, Bloomington"
+  title: "Dualities in quantum many-body physics"
+  type: "lunchtalk"
+
+- date: "2021-10-08T13:00:00"
+  end: false
+  speaker: "Wei Tang"
+  affiliation: "Ghent University"
+  title: "Tensor network simulation of the (1+1)-dimensional O(3) nonlinear σ-model with θ=π term"
+  type: "lunchtalk"
+
+- date: "2021-10-01T13:00:00"
+  end: false
+  speaker: "Tobias Haas"
+  affiliation: "University of Heidelberg"
+  title: "Relative entropic uncertainty relation for scalar quantum fields"
+  type: "lunchtalk"
+
+- date: "2021-09-17T13:00:00"
+  end: false
+  speaker: "Gertian Roose"
+  affiliation: "Ghent University"
+  title: "False vacuum decay beyond the semi-classical limit"
+  type: "lunchtalk"
+
+- date: "2021-09-10T10:30:00"
+  end: false
+  speaker: "Norbert Schuch"
+  affiliation: "University of Vienna"
+  title: "Disorder operators"
+  type: "lunchtalk"
+
+- date: "2021-06-25T13:00:00"
+  end: false
+  speaker: "Daan De Keyser"
+  affiliation: "Ghent University"
+  title: "Projecting time-dependent potentials on a BEC"
+  type: "lunchtalk"
+
+- date: "2021-06-25T13:00:40"
+  end: false
+  speaker: "Clara Tanghe"
+  affiliation: "Ghent University"
+  title: "Quasi-particle excitations and non-equilibrium dynamics of BECs"
+  type: "lunchtalk"
+
+- date: "2021-06-18T13:00:00"
+  end: false
+  speaker: "Sheng-Hsuan Lin"
+  affiliation: "Technical University of München"
+  title: "Isometric Tensor Network States"
+  type: "lunchtalk"
+
+- date: "2021-06-11T13:00:00"
+  end: false
+  speaker: "Romain Couvreur"
+  affiliation: "Ghent University"
+  title: "Geometric lattice models and (ir)rational CFTs"
+  type: "lunchtalk"
+
+- date: "2021-06-04T13:00:00"
+  end: false
+  speaker: "Atsushi Ueda"
+  affiliation: "University of Tokyo"
+  title: "Resolving the Berezinskii-Kosterlitz-Thouless transition in the 2D XY model with tensor-network based level spectroscopy"
+  type: "lunchtalk"
+
+- date: "2021-05-28T13:00:00"
+  end: false
+  speaker: "Edward Gillman"
+  affiliation: "University of Nottingham"
+  title: "Absorbing phase transitions in quantum systems"
+  type: "lunchtalk"
+
+- date: "2021-05-21T13:00:00"
+  end: false
+  speaker: "Tom Vieijra"
+  affiliation: "Ghent University"
+  title: "Sampling probability distributions defined by tensor networks"
+  type: "lunchtalk"
+
+- date: "2021-05-07T13:00:00"
+  end: false
+  speaker: "Jutho Haegeman"
+  affiliation: "Ghent University"
+  title: "Krylov methods"
+  type: "lunchtalk"
+
+- date: "2021-04-30T13:00:00"
+  end: false
+  speaker: "Fatemeh Mohammadi"
+  affiliation: "Ghent University"
+  title: "Introduction to tropical algebra"
+  type: "lunchtalk"
+
+- date: "2021-04-23T13:00:00"
+  end: false
+  speaker: "Frank Verstraete"
+  affiliation: "Ghent University"
+  title: "Distillable entanglement"
+  type: "lunchtalk"
+
+- date: "2021-04-16T13:00:00"
+  end: false
+  speaker: "Laurens Lootens"
+  affiliation: "Ghent University"
+  title: "Bimodule categories"
+  type: "lunchtalk"
+
+- date: "2021-04-02T13:00:00"
+  end: false
+  speaker: "Quinten Mortier"
+  affiliation: "Ghent University"
+  title: "Gaussian fermionic PEPS for chiral states"
+  type: "lunchtalk"
+
+- date: "2021-03-26T13:00:00"
+  end: false
+  speaker: "Anna Francuz"
+  affiliation: "Jagiellonian University"
+  title: "Determining topological order with tensor networks"
+  type: "lunchtalk"
+
+- date: "2021-03-05T13:00:00"
+  end: false
+  speaker: "Antoine Tilloy"
+  affiliation: "MPQ"
+  title: "Relativistic continuous matrix product states for quantum fields without cutoff"
+  type: "lunchtalk"
+
+- date: "2021-02-19T13:00:00"
+  end: false
+  speaker: "Alexander Jahn"
+  affiliation: "FU Berlin"
+  title: "From quantum error correction to critical theories: A holographic journey"
+  type: "lunchtalk"
+
+- date: "2021-01-22T13:00:00"
+  end: false
+  speaker: "Bram Vanhecke"
+  affiliation: "Ghent University"
+  title: "Applying a scaling hypothesis in the continuum for the \\(\\lambda \\phi^4\\) model"
+  type: "lunchtalk"
+
+- date: "2021-01-15T16:00:00"
+  end: false
+  speaker: "Ashley Milsted"
+  affiliation: "California Institute of Technology"
+  title: "Collisions of false-vacuum bubble walls in a quantum spin chain"
+  type: "lunchtalk"
+
+- date: "2021-01-08T13:00:00"
+  end: false
+  speaker: "Riccarda Bonsignori"
+  affiliation: "SISSA-Trieste"
+  title: "Quasiparticle dynamics of symmetry resolved entanglement after a quench in free fermionic systems"
+  type: "lunchtalk"
+
+- date: "2020-12-18T13:00:00"
+  end: false
+  speaker: "Juraj Hasik"
+  affiliation: "University of Toulouse"
+  title: "Investigation of the Néel phase of the frustrated Heisenberg antiferromagnet by differentiable symmetric tensor networks"
+  type: "lunchtalk"
+
+- date: "2020-12-11T15:00:00"
+  end: false
+  speaker: "Yantao Wu"
+  affiliation: "Princeton University"
+  title: '"Variational Monte Carlo Renormalization Group" and "Dissipative dynamics after local quenches in quantum spin chains."'
+  type: "afterlunchtalk"
+
+- date: "2020-12-11T13:00:00"
+  end: false
+  speaker: "Archisman Ghosh"
+  affiliation: "Ghent University"
+  title: "Bells Sirens & Beyond"
+  type: "lunchtalk"
+
+- date: "2020-12-04T13:00:00"
+  end: false
+  speaker: "Freek Witteveen"
+  affiliation: "University of Amsterdam"
+  title: "Bosonic entanglement renormalization circuits from wavelet theory"
+  type: "lunchtalk"
+
+- date: "2020-11-27T13:00:00"
+  end: false
+  speaker: "Andras Molnar"
+  affiliation: "Universidad Complutense de Madrid"
+  title: "Fundamental theorems for PEPS"
+  type: "lunchtalk"
+
+- date: "2020-11-20T13:00:00"
+  end: false
+  speaker: "Rui-Zhen Huang"
+  affiliation: "Kavli Institute for Theoretical Sciences, University of Chinese Academy of Sciences"
+  title: "Emergent symmetry and non-equilibrium driven dynamics for a 1+1d deconfined quantum critical point"
+  type: "lunchtalk"
