@@ -1,0 +1,81 @@
+- name: Stéphane Clemmen
+  photo: stephane.jpg
+  role: staff
+  info: F.R.S.-FNRS Research Associate
+  page: stephane_clemmen
+  identifier: stephane.clemmen
+  scholar: 46hhUJAAAAAJ
+
+- name: Serge Massar
+  photo: serge.jpg
+  role: staff
+  info: Professor
+  page: serge_massar
+  identifier: serge.massar
+
+- name: Stefano Pironio
+  photo: stefano.jpg
+  role: staff
+  info: F.R.S.-FNRS Senior Research Associate
+  identifier: stefano.pironio
+  arxiv: pironio_s_1
+  scholar: xboKfmkAAAAJ
+
+- name: Erik Woodhead
+  photo: erik.jpg
+  role: postdoc
+  info: Postdoc since 2019
+  identifier: erik.woodhead
+  arxiv: woodhead_e_1
+  scholar: 7eZJbT8AAAAJ
+  github: ewoodhead
+  orcid: 0000-0001-7696-4461
+
+- name: Timothé David
+  photo: timothe.jpg
+  role: phd
+  info: PhD student
+  identifier: timothe.david
+
+- name: Alessandro Lupo
+  photo: alessandro.jpg
+  role: phd
+  info: PhD student
+  identifier: alessandro.lupo
+  arxiv: 0000-0002-5541-7140
+  scholar: N6OeIBIAAAAJ
+  linkedin: alessandro-lupo
+  orcid: 0000-0002-5541-7140
+
+- name: Michele Masini
+  photo: michele.jpg
+  role: phd
+  info: PhD student since 2020
+  identifier: michele.masini
+  arxiv: masini_m_1
+  scholar: I1MBODYAAAAJ
+  github: MicheleMasini1996
+  orcid: 0000-0001-9965-7157
+
+- name: Romain Morleghem
+  photo: romain.jpg
+  role: phd
+  info: PhD student
+  identifier: romain.morleghem
+
+- name: Jef Pauwels
+  photo: brad.jpg
+  role: phd
+  info: PhD student since 2019
+  identifier: jef.pauwels
+
+- name: Enrico Picco
+  photo: enrico.jpg
+  role: phd
+  info: PhD student
+  identifier: enrico.picco
+
+- name: Samara Hussain
+  photo: samara.jpg
+  role: admin
+  identifier: samara.hussain
