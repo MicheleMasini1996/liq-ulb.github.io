@@ -9,6 +9,8 @@ permalink: /publications/
 
 # Publications
 
+(Also on [Google Scholar](https://scholar.google.be/citations?hl=en&user=vtzT0VAAAAAJ&view_op=list_works&sortby=pubdate).)
+
 {% for publi in site.data.publist %}
 
   <em>{{ publi.title }}</em> <br />
@@ -16,5 +18,3 @@ permalink: /publications/
   <a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
 
 {% endfor %}
-
-Our group's publications can also be found on [Google Scholar](https://scholar.google.be/citations?hl=en&user=vtzT0VAAAAAJ&view_op=list_works&sortby=pubdate).
