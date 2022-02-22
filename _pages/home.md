@@ -6,9 +6,12 @@ sitemap: false
 permalink: /
 ---
 
+
 We are a research group at the [Université libre de Bruxelles](http://www.ulb.be), working on quantum information and bio-inspired information processing, both at the theoretical and experimental level.
 
-
+<!--<h3 style="color:red; text-align:center">
+<a href="{{ site.url }}{{ site.baseurl }}/vacancies" style="color:red">We have open positions</a>
+</h3>-->
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
   <!-- Menu -->
