@@ -7,3 +7,5 @@ permalink: /vacancies
 ---
 
 # Open positions
+
+There are currently no open positions in our group.
