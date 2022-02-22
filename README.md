@@ -40,4 +40,4 @@ When that's done you can start a local server so you can see what the site looks
 ```
 $ bundle exec jekyll serve
 ```
-When that is running, open your favourite web browser and visit https://localhost:4000 to see your local version of the site.
+When that is running, open your favourite web browser and visit http://localhost:4000 to see your local version of the site.
