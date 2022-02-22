@@ -33,7 +33,7 @@ $ git clone https://github.com/liq-ulb/liq-ulb.github.io.git
 
 Go into the directory and run `bundle install`:
 ```
-$ cd liq-ulb.github.io
+$ cd liq-ulb.github.io/
 $ bundle install
 ```
 
