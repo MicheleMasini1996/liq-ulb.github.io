@@ -27,7 +27,6 @@ $ gem install jekyll bundler webrick
 
 Clone the repository somewhere:
 ```
-$ cd projects/
 $ git clone https://github.com/liq-ulb/liq-ulb.github.io.git
 ```
 
