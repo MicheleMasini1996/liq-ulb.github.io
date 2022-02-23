@@ -20,5 +20,3 @@ Our group's publications can also be found on [Google Scholar](https://scholar.g
   <a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
 
 {% endfor %}
-
-

@@ -1,0 +1,11 @@
+- title: Senior staff
+  role: staff
+
+- title: Postdoctoral researchers
+  role: postdoc
+
+- title: PhD students
+  role: phd
+
+- title: Administrative support
+  role: admin
