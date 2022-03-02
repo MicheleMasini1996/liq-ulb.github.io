@@ -54,6 +54,7 @@ scholar:
   locale: en
   source: _bibliography/
   bibliography: '*.bib'
+  bibliography_template: bib
   sort_by: year, month
   order: descending
   group_by: year
