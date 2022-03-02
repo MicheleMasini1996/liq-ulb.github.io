@@ -3,8 +3,9 @@
 {% if entry.eprint %}
 {% if entry.archiveprefix %}
 {% assign archive = entry.archiveprefix %}
+{% assign archdomain = archive | downcase %}
 {% else %}
 {% assign archive = "arXiv" %}
 {% endif %}
-<p><a href="https://{{ archive }}.org/abs/{{ entry.eprint }}">{{ archive }}:{{ entry.eprint }}{% if entry.primaryclass %} [{{ entry.primaryclass }}]{% endif %}</a></p>
+<p><a href="https://{{ archdomain }}.org/abs/{{ entry.eprint }}">{{ archive }}:{{ entry.eprint }}{% if entry.primaryclass %} [{{ entry.primaryclass }}]{% endif %}</a></p>
 {% endif %}
