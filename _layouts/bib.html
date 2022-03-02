@@ -1,0 +1,5 @@
+{{ reference  }}
+
+{% if entry.eprint %}
+<p><a href="https://arxiv.org/abs/{{ entry.eprint }}">{{ entry.archive }}:{{ entry.eprint }} [{{ entry.primaryclass }}]</a></p>
+{% endif %}

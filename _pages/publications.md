@@ -13,6 +13,7 @@ permalink: /publications/
 Our group's publications can also be found on [Google Scholar](https://scholar.google.be/citations?hl=en&user=vtzT0VAAAAAJ&view_op=list_works&sortby=pubdate).
 
 {% bibliography %}
+{% bibliography -f %}
 
 
 
