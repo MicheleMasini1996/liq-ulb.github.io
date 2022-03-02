@@ -12,14 +12,6 @@ permalink: /publications/
 
 Our group's publications can also be found on [Google Scholar](https://scholar.google.be/citations?hl=en&user=vtzT0VAAAAAJ&view_op=list_works&sortby=pubdate).
 
-{% bibliography %}
-{% bibliography -f %}
-
-
-
-# Generated using liquid
-
-
 <script>function pubgroup(evt, group) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -73,50 +65,32 @@ Our group's publications can also be found on [Google Scholar](https://scholar.g
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 6px 6px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+/* Remove article numbers */
+ol {
+  list-style-type: none;
 }
 </style>
 
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks active" onclick="pubgroup(event, 'years')">By Year</button>
-  <button class="tablinks" onclick="pubgroup(event, 'topics')">By Topic</button>
+  <button class="tablinks active" onclick="pubgroup(event, 'all')">All</button>
+  {% for topic in site.data.pubtopics %}<button class="tablinks" onclick="pubgroup(event, '{{ topic.code }}')">{{ topic.name }}</button>{% endfor %}
 </div>
 
 <!-- Tab content -->
-<div id="years" class="tabcontent">
-<!-- Get a unique array of publication years -->
-{% assign years = "" | split: ',' %}
-{% for pub in site.data.publist %}
-  {% assign years = years | push: pub.year %}
-{% endfor %}
-{% assign years = years | rsort | uniq %}
-
-
-
-{% for year in years %}
-
-## {{ year }}
-
-{% for p in site.data.publist %}
-
-{% if p.year == year %}
-
-  <p style="margin-left:3ex"><em>{{ p.title }}</em> <br />
-  {{ p.authors }} <br />
-  {% if p.journal %}<a href="https://doi.org/{{ p.journal.doi }}">{{ p.journal.name }} <b>{{ p.journal.volume }}</b>, {{ p.journal.pages }}</a>; {% endif %}<a href="https://arxiv.org/abs/{{ p.arxiv.eprint }}">arXiv:{{ p.arxiv.eprint}} [{{ p.arxiv.class }}]</a></p>
-
-{% endif %}
-
-{% endfor %}
-
-{% endfor %}
+<div id="all" class="tabcontent">
+  {% bibliography %}
 </div>
 
-<div id="topics" class="tabcontent">
-(publications grouped by topic here)
+{% for topic in site.data.pubtopics %}
+<div id="{{ topic.code }}" class="tabcontent">
+  {% bibliography --query @*[topic~={{ topic.code }}]* %}
 </div>
+{% endfor %}
 
-<script>document.getElementById("years").style.display = "block";</script>
+<script>document.getElementById("all").style.display = "block";</script>
