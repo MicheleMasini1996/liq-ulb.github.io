@@ -60,7 +60,7 @@ permalink: /team/
 
 <div class="col-sm-6 clearfix">
 {% for member in site.data.alumni %}
-{{ member.name }} {% if member.comment %}({{ member.comment }}){% endif %}
+{{ member.name }} {% if member.info %}, {{ member.info }}{% endif %}
 {% endfor %}
 </div>
 
