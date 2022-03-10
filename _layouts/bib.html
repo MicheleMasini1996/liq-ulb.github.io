@@ -1,0 +1,17 @@
+{{ reference }}
+
+<p>
+{% if entry.eprint %}
+{% if entry.archiveprefix %}
+{% assign archive = entry.archiveprefix %}
+{% assign archdomain = archive | downcase %}
+{% else %}
+{% assign archive = "arXiv" %}
+{% endif %}
+<a href="https://{{ archdomain }}.org/abs/{{ entry.eprint }}">{{ archive }}:{{ entry.eprint }}{% unless entry.eprint contains "/" %}{% if entry.primaryclass %} [{{ entry.primaryclass }}]{% endif %}{% endunless %}</a>
+{% elsif entry.doi %}
+<a href="https://doi.org/{{ entry.doi }}">doi:{{ entry.doi }}</a>
+{% elsif entry.url %}
+<a href="{{ entry.url }}">{{ entry.url }}</a>
+{% endif %}
+</p>

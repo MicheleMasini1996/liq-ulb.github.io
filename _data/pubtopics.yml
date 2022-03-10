@@ -1,0 +1,14 @@
+- name: DIQKD
+  code: diqkd
+
+- name: Cryptography
+  code: crypto
+
+- name: Quantum correlations
+  code: correlations
+
+- name: Quantum computing
+  code: qc
+
+- name: Photonics
+  code: photonics

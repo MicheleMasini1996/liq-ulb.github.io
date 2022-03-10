@@ -55,4 +55,6 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
 
 On the theory side, we are interested in many aspects of quantum information, including quantum correlations, quantum cryptography, and quantum foundations. On the experimental side, we focus on the development and manipulation of novel sources of entangled photons, both in fibers and in silicon waveguides. We also develop bio-inspired photonic processing systems, such as reservoir computing.
 
-We are part of the Physics Department of ULB. We exchange ideas and work with our colleagues from the [Center for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be/) and [OPERA-Photonique](http://www.ulb.ac.be/polytech/soa/index.html).
+We are part of the [Physics Department of ULB](https://sciences.ulb.be/departement-physique). We exchange ideas and work with our colleagues from the [Center for Quantum Information and Communication (QuIC)](http://quic.ulb.ac.be/) and [OPERA-Photonique](http://www.ulb.ac.be/polytech/soa/index.html). 
+
+For news and updates, follows us on [Twitter](https://twitter.com/quantinfoulb).
