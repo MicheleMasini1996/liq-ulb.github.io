@@ -12,7 +12,12 @@ permalink: /publications/
 
 Our group's publications can also be found on [Google Scholar](https://scholar.google.be/citations?hl=en&user=vtzT0VAAAAAJ&view_op=list_works&sortby=pubdate).
 
-<script>function pubgroup(evt, group) {
+<!--
+Tabs adapted from an example at
+  https://www.w3schools.com/howto/howto_js_tabs.asp
+-->
+<script>
+function pubgroup(evt, group) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -31,7 +36,8 @@ Our group's publications can also be found on [Google Scholar](https://scholar.g
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(group).style.display = "block";
   evt.currentTarget.className += " active";
-}</script>
+}
+</script>
 
 <style>
 /* Style the tab */

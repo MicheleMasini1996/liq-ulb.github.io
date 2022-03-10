@@ -74,7 +74,12 @@
 
 <p>Our group’s publications can also be found on <a href="https://scholar.google.be/citations?hl=en&amp;user=vtzT0VAAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>.</p>
 
-<script>function pubgroup(evt, group) {
+<!--
+Tabs adapted from an example at
+  https://www.w3schools.com/howto/howto_js_tabs.asp
+-->
+<script>
+function pubgroup(evt, group) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -93,7 +98,8 @@
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(group).style.display = "block";
   evt.currentTarget.className += " active";
-}</script>
+}
+</script>
 
 <style>
 /* Style the tab */
