@@ -12,8 +12,7 @@ permalink: /publications/
 
 Our group's publications can also be found on [Google Scholar](https://scholar.google.be/citations?hl=en&user=vtzT0VAAAAAJ&view_op=list_works&sortby=pubdate).
 
-<script>
-function pubgroup(evt, group) {
+<script>function pubgroup(evt, group) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -32,8 +31,7 @@ function pubgroup(evt, group) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(group).style.display = "block";
   evt.currentTarget.className += " active";
-}
-</script>
+}</script>
 
 <style>
 /* Style the tab */
@@ -42,7 +40,6 @@ function pubgroup(evt, group) {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
->>>>>>> snd-version
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
