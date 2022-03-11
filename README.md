@@ -1,8 +1,10 @@
 # LIQ website
 
-Website of the Laboratoire d'Information Quantique.
+Website of the Laboratoire d'Information Quantique. The version here can be
+seen at https://liq-ulb.github.io/_site/.
 
-This site was made by forking and adapting the website of Allan Lab as explained [here](http://www.allanlab.org/aboutwebsite.html).
+This site was made by forking and adapting the website of Allan Lab as
+explained [here](http://www.allanlab.org/aboutwebsite.html).
 
 
 
@@ -35,9 +37,10 @@ Go into the directory and run `bundle install`:
 $ cd liq-ulb.github.io/
 $ bundle install
 ```
-
-When that's done you can start a local server so you can see what the site looks like as you make edits to it:
+When that's done you can start a local server so you can see what the site
+looks like as you make edits to it:
 ```
 $ bundle exec jekyll serve
 ```
-When that is running, open your favourite web browser and visit http://localhost:4000 to see your local version of the site.
+When that is running, open your favourite web browser and visit
+http://localhost:4000 to see your local version of the site.
