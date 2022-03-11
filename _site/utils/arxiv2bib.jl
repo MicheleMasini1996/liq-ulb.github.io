@@ -24,7 +24,7 @@ Obtain bibtex string from doi through crossref.org
 For journals of the APS family the "pages" field is missing. A simple fix is provided below (see add_pages_bibstr!) using the fact that the last part of the doi correspond to the page value for APS journals.
 """
 function doi2bib(doi)
-    doi_req = urllib.request.Request("https://doi.org/" * doi)
+    doi_req = urllib.request.Request("http://doi.org/" * doi)
     doi_req.add_header("Accept", "application/x-bibtex")
 
     f = urllib.request.urlopen(doi_req)
@@ -96,4 +96,3 @@ search = arxiv.Search(query="au:Massar_S",sort_by = arxiv.SortCriterion.Submitte
 # file=open(filename,"w")
 # write(file,bibstr,"\n\n")
 # close(file)
-

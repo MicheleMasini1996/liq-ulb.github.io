@@ -44,3 +44,20 @@ $ bundle exec jekyll serve
 ```
 When that is running, open your favourite web browser and visit
 http://localhost:4000/_site/ to see your local version of the site.
+
+
+
+## Building
+
+Run
+```
+$ jekyll build
+```
+inside the project directory to rebuild the site. To generate a version of
+the site that will be hosted somewhere other than github, first edit the
+lines
+```
+baseurl: "/_site"
+url: "https://liq-ulb.github.io"
+```
+in `_config.yml` accordingly.
