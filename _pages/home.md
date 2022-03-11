@@ -13,6 +13,7 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
 <a href="{{ site.url }}{{ site.baseurl }}/vacancies" style="color:red">We have open positions</a>
 </h3>-->
 
+<center>
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
   <!-- Menu -->
   <ol class="carousel-indicators">
@@ -50,6 +51,7 @@ We are a research group at the [Université libre de Bruxelles](http://www.ulb.b
     <span class="sr-only">Next</span>
   </a>
 </div>
+</center>
 
 
 

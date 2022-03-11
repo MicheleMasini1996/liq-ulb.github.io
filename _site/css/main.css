@@ -2618,7 +2618,7 @@ pubtit { font-weight: bold; }
 /* Grid overrides */
 .col-sm-4 { padding-left: 26px; padding-right: 26px; }
 
-/* Carusel */
-.carousel { border-radius: 3px 3px 3px 3px; margin-bottom: 20px; margin-top: 20px; margin-left: 30px; margin-right: 30px; }
+/* Carousel */
+.carousel { border-radius: 3px 3px 3px 3px; margin-bottom: 20px; margin-top: 20px; margin-left: 30px; margin-right: 30px; width: 75%; }
 
 /*# sourceMappingURL=main.css.map */
