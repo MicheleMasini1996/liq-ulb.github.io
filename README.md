@@ -43,4 +43,4 @@ looks like as you make edits to it:
 $ bundle exec jekyll serve
 ```
 When that is running, open your favourite web browser and visit
-http://localhost:4000 to see your local version of the site.
+http://localhost:4000/_site/ to see your local version of the site.
