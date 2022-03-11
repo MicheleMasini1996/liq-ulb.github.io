@@ -85,7 +85,7 @@ ol {
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks active" onclick="pubgroup(event, 'all')">All</button>
-  {% for topic in site.data.pubtopics %}<button class="tablinks" onclick="pubgroup(event, '{{ topic.code }}')">{{ topic.name }}</button>{% endfor %}
+  {% for t in site.data.pubtopics %}{% if t.topic %}{% assign tag = t.topic %}{% else %}{% assign tag = t.class %}{% endif %}<button class="tablinks" onclick="pubgroup(event, '{{ tag }}')">{{ t.title }}</button>{% endfor %}
 </div>
 
 <!-- Tab content -->
@@ -93,9 +93,18 @@ ol {
   {% bibliography %}
 </div>
 
-{% for topic in site.data.pubtopics %}
-<div id="{{ topic.code }}" class="tabcontent">
-  {% bibliography --query @*[topic~={{ topic.code }}]* %}
+{% for t in site.data.pubtopics %}
+{% if t.topic %}
+{% assign tag = t.topic %}
+{% else %}
+{% assign tag = t.class %}
+{% endif %}
+<div id="{{ tag }}" class="tabcontent">
+  {% if t.topic %}
+  {% bibliography --query @*[topic~={{ t.topic }}]* %}
+  {% else %}
+  {% bibliography --query @*[primaryclass^={{ t.class }} || eprint^={{ t.class }}]* %}
+  {% endif %}
 </div>
 {% endfor %}
 

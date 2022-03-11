@@ -1,14 +1,8 @@
-- name: DIQKD
-  code: diqkd
+- title: Quantum information
+  class: quant-ph
 
-- name: Cryptography
-  code: crypto
+- title: Optics
+  class: physics.optics
 
-- name: Quantum correlations
-  code: correlations
-
-- name: Quantum computing
-  code: qc
-
-- name: Photonics
-  code: photonics
+- title: Boi-inspired computing/other topics
+  class: cs.
