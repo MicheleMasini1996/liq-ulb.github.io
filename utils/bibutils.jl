@@ -111,18 +111,27 @@ function asub(author)
     end
 end
 
+
+const title_subs = Dict(
+    "1510.00248" => "Random `choices' and the locality loophole"
+)
+
+fixlabel(label) = join(split(anyascii(label)), '_')
+
 function arxiv2dict(paper)
     authors = [asub(a.name) for a in paper.authors]
     eprint = strip_version(paper.get_short_id())
+    title = (haskey(title_subs, eprint) ? title_subs[eprint] : paper.title)
     date = paper.published
     year = string(Dates.year(date))
     month = months[Dates.month(date)]
     day = string(Dates.day(date))
-    label = anyascii(first(split(first(authors), ", "))) * "_" * string(year)
+    firstauthor = first(split(first(authors), ", "))
+    label =  fixlabel(firstauthor) * "_" * string(year)
 
     result = Dict("type" => "article",
                   "label" => label,
-                  "title" => paper.title,
+                  "title" => title,
                   "author" => authors,
                   "year" => year,
                   "month" => month,
@@ -244,22 +253,38 @@ function parse_bibtex(str)
     result["author"] = split(result["author"], " and ")
     
     surname = first(split(first(result["author"]), ','))
-    label = anyascii(surname) * '_' * result["year"]
+    label = fixlabel(surname) * '_' * result["year"]
     result["label"] = label
 
     return result
 end
 
+const missing_pages = Dict(
+    "10.1038/ncomms1244" => "238"
+)
+
+
+const doi_title_subs = Dict(
+    "10.1103/PhysRevA.88.032112" => "Experimental refutation of a class of ψ-epistemic models"
+)
+
 function lookup_doi(doi)
     result = doi_request(doi)
     entry = parse_bibtex(result)
 
+    if haskey(doi_title_subs, doi)
+        entry["title"] = doi_title_subs[doi]
+    end
+
     if !haskey(entry, "pages")
-        if contains(entry["publisher"], "American Physical Society")
+        if haskey(missing_pages, doi)
+            entry["pages"] = doi
+        elseif contains(entry["publisher"], "American Physical Society")
             entry["pages"] = last(split(doi, '.'))
         else
             println(stderr, "Warning: Paper https://doi.org/", doi,
                     " missing pages.")
+            entry["pages"] = ""
         end
     end
 
@@ -332,12 +357,12 @@ const fields = [
 ]
 
 const fieldlen = maximum(length.(fields))
-
-
 const textwidth = 78
 
+
+
 function print_val(value, lmargin, dest::IO=stdout)
-    if isnothing(value)
+    if isnothing(value) || isempty(value)
         return
     end
 
@@ -396,6 +421,32 @@ function entry2bib(entry, filename)
 end
 
 
+"Make entry labels unique."
+function unique_labels!(entries)
+    labels = Dict{String,Int}()
+
+    for e in entries
+        label = e["label"]
+
+        if !haskey(labels, label)
+            labels[label] = 1
+        else
+            new_label = label * "_" * string(labels[label])
+            labels[label] += 1
+
+            while haskey(labels, new_label)
+                labels[new_label] += 1
+                new_label = label * "_" * string(labels[label])
+                labels[label] += 1
+            end
+
+            labels[new_label] = 1
+            e["label"] = new_label
+        end
+    end
+end
+
+
 
 """
 Generate BibTeX file from entries or ArXiv search, e.g.
@@ -426,4 +477,3 @@ end
 function bibfile(entries)
     bibfile(entries, stdout)
 end
-
