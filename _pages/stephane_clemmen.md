@@ -8,7 +8,7 @@ permalink: /stephane_clemmen/
 
 # Stéphane Clemmen
 
-Stéphane received a degree of master in physics from the Université Libre de Bruxelles (ULB), Belgium in 2006. From 2006 to 2010, he carried out his PhD work in the LIQ department of the Science Faculty & OPERA-photonique Department of the Applied Science Faculty of ULB thanks to a Doctoral fellowship of the Belgian Fund for Scientific Research (FRIA). Stephane PhD thesis was devoted to nonlinear and quantum optics using silicon photonics. He then worked at Cornell University (NY) in the group of Alexander Gaeta as a post-doc researcher from 2010 to 2014. Stephane joined the [Photonics Research Group](http://photonics.intec.ugent.be) of the University of Ghent in 2014 as a postdoc researcher and is a [part-time professor](http://photonics.intec.ugent.be/contact/people.asp?ID=398) in this group since 2018. In parallel, Stephane rejoined ULB in 2017 and is a permanent FNRS researcher since 2019 both in the science faculty (LIQ) and in the Brussels School of engineering ([OPERA-photonics](https://www2.ulb.ac.be/facs/polytech/opera/index.html)).
+Stéphane received a degree of master in physics from the Université Libre de Bruxelles (ULB), Belgium in 2006. From 2006 to 2010, he carried out his PhD work in the LIQ department of the Science Faculty & OPERA-photonique Department of the Applied Science Faculty of ULB thanks to a Doctoral fellowship of the Belgian Fund for Scientific Research (FRIA). Stephane's PhD thesis was devoted to nonlinear and quantum optics using silicon photonics. He then worked at Cornell University (NY) in the group of Alexander Gaeta as a post-doc researcher from 2010 to 2014. Stephane joined the [Photonics Research Group](http://photonics.intec.ugent.be) of the University of Ghent in 2014 as a postdoc researcher and is a [part-time professor](http://photonics.intec.ugent.be/contact/people.asp?ID=398) in this group since 2018. In parallel, Stephane rejoined ULB in 2017 and is a permanent FNRS researcher since 2019 both in the science faculty (LIQ) and in the Brussels School of engineering ([OPERA-photonics](https://www2.ulb.ac.be/facs/polytech/opera/index.html)).
 
 
 
@@ -41,7 +41,7 @@ Stéphane's research interests lie in the generation and manipulation of photoni
 
 <a href="http://brightresearch.be/wp-content/uploads/2020/04/offre-PhD-ULB-1.pdf" title="link to open position " target="_self">1 PhD vacancies</a> left
 
-In 2020, we are seeking 2 PhD students working on quantum optics and/or nonlinear optics projects. Suffisent knowledge of English is required. Knowledge of French is a +. The position involves a very limited amount of teaching hours. The thesis may be done in "co-tutelle" with the University of Ghent. The appointment is for two years: the candidate will have to apply for a grant (FNRS [research fellowship](https://www.frs-fnrs.be/docs/Reglement-et-documents/FRS-FNRS_REGL_FRIA_EN.pdf), [FRIA](https://www.frs-fnrs.be/docs/Reglement-et-documents/FRS-FNRS_REGL_FRIA_EN.pdf), [FWO](https://www.fwo.be/en/fellowships-funding/phd-fellowships/phd-fellowship-fundamental-research/), or [SBO](https://www.fwo.be/en/fellowships-funding/phd-fellowships/phd-fellowship-strategic-basic-research/)) in order to be funded for at least two other years (please chech the elligibility criteria for these grants as they differ from each other). We offer complementary benefits, salary exempted from income taxes, federal health insurrance, laptop, ...
+In 2020, we are seeking 2 PhD students working on quantum optics and/or nonlinear optics projects. Sufficient knowledge of English is required. Knowledge of French is a +. The position involves a very limited amount of teaching hours. The thesis may be done in "co-tutelle" with the University of Ghent. The appointment is for two years: the candidate will have to apply for a grant (FNRS [research fellowship](https://www.frs-fnrs.be/docs/Reglement-et-documents/FRS-FNRS_REGL_FRIA_EN.pdf), [FRIA](https://www.frs-fnrs.be/docs/Reglement-et-documents/FRS-FNRS_REGL_FRIA_EN.pdf), [FWO](https://www.fwo.be/en/fellowships-funding/phd-fellowships/phd-fellowship-fundamental-research/), or [SBO](https://www.fwo.be/en/fellowships-funding/phd-fellowships/phd-fellowship-strategic-basic-research/)) in order to be funded for at least two other years (please chech the elligibility criteria for these grants as they differ from each other). We offer complementary benefits, salary exempted from income taxes, federal health insurrance, laptop, ...
 
 Other positions
 
@@ -50,11 +50,11 @@ Postdoc as well as PhD positions can be filled in around the following topics:
 - Raman spectroscopy: poor's man quantum optics inspired system, low frequency Raman of viral particles
 - Single photon sources based on active multiplexing
 
-Candidates are required to acquire their own funding at the university level ([Maria Slodovska COFUND](https://www.ulb.be/fr/union-europeenne/financements-marie-sk-odowska-curie)), or at the FNRS ([postdoc](https://www.frs-fnrs.be/en/financements/chercheur-postdoc#cr))
+Candidates are required to acquire their own funding at the university level ([Maria Slodovska COFUND](https://www.ulb.be/fr/union-europeenne/financements-marie-sk-odowska-curie)), or at the FNRS ([postdoc](https://www.frs-fnrs.be/en/financements/chercheur-postdoc#cr)).
 
 
 
-## Publications
+<br>
 
 [CV](https://cvchercheurs.ulb.ac.be/exportHTMLUK.php?matricule=38983&cvId=38983eng&prefExport=Array&langue=UK)
 
@@ -66,6 +66,6 @@ Candidates are required to acquire their own funding at the university level ([M
 
 B. Kuyken, **S. Clemmen**, S. K. Selvaraja, W. Bogaerts, D. Van Thourhout, Ph. Emplit, S. Massar, G. Roelkens and R. Baets, *On-chip parametric amplification with 26.5 dB gain at telecommunication wavelengths using CMOS-compatible hydrogenated amorphous silicon waveguides"*, Optics Letters **36**, 552 (2011) \[[DOI](https://doi.org/10.1364/OL.36.000552)\]
 
-**S Clemmen**, A Hermans, E Solano, J Dendooven, K. Koskinen, M. Kauranen, E. Brainis, C. Detavernier, R. Baets, Atomic layer deposited second-order nonlinear optical metamaterial for back-end integration with CMOS-compatible nanophotonic circuitry, Optics letters 2015, voil 40 (22), pp. 5371-5374 \[[DOI](https://doi.org/10.1364/OL.40.005371)\]
+**S Clemmen**, A Hermans, E Solano, J Dendooven, K. Koskinen, M. Kauranen, E. Brainis, C. Detavernier, R. Baets, Atomic layer deposited second-order nonlinear optical metamaterial for back-end integration with CMOS-compatible nanophotonic circuitry, Optics letters 2015, vol 40 (22), pp. 5371-5374 \[[DOI](https://doi.org/10.1364/OL.40.005371)\]
 
 C. Joshi, A. Farsi, **S. Clemmen**, S. Ramelow, A. L. Gaeta, Frequency Multiplexing for Quasi-Deterministic Heralded Single-Photon Sources, Nature communications \[[DOI](https://doi.org/10.1038/s41467-018-03254-4)\]
