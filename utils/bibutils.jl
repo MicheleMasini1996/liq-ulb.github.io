@@ -86,6 +86,23 @@ author_subs = Dict(
 
 unknown_subs = Dict()
 
+# https://arxiv.org/abs/1209.3129 published here but doesn't seem to have a
+# DOI:
+#   https://dblp.org/db/conf/nips/nips2012.html
+#
+# https://arxiv.org/abs/1612.08606 seems to have been republished on ArXiv
+# as https://arxiv.org/abs/2008.11247.
+
+const missing_doi = Dict(
+    "1908.11210" => "10.3389/fphy.2019.00138",
+    "1310.4125" => "10.1088/1751-8113/48/2/025302",
+    "1111.0837" => "10.1145/2716307",
+    "1102.1030" => "10.1364/OL.35.003483",
+    "0909.2832" => "10.1016/j.jtbi.2009.09.004",
+    "0705.1274" => "10.1364/OL.32.002819", # Some changes to title/abstract.
+    "physics/0507189" => "10.1103/PhysRevE.72.066617"
+)
+
 function asub(author)
     if haskey(author_subs, author)
         return author_subs[author]
@@ -142,6 +159,8 @@ function arxiv2dict(paper)
 
     if !isnothing(paper.doi)
         result["doi"] = paper.doi
+    elseif haskey(missing_doi, eprint)
+        result["doi"] = missing_doi[eprint]
     end
 
     return result
@@ -259,13 +278,33 @@ function parse_bibtex(str)
     return result
 end
 
+# Crossref doesn't provide pages for all journals or publishers.
+# Problematic ones:
+#   10.1007/ -> Quantum Information Processing (Springer).
+#   10.1038/ -> Nature Communications, Scientific Reports (Nature).
+#
+# Comment 'X' means that the pages seems to be contained in the DOI and could
+# be extracted programmatically.
 const missing_pages = Dict(
+    "10.3389/fphy.2019.00138" => "138", # X
+    "10.1007/s11128-021-03326-3" => "396",
+    "10.1007/s11128-020-02959-0" => "35",
+    "10.1007/978-3-642-35656-8_9" => "107--115",
+    "10.1007/978-1-4614-0769-0_21" => "601--634",
+    "10.1038/s41467-018-03254-4" => "847",
+    "10.1038/srep03901" => "3901", # X
+    "10.1038/srep00287" => "287", # X
     "10.1038/ncomms1244" => "238"
 )
 
-
+# Crossref doesn't put a space before the 'psi' in these titles.
+# Below is fine for the website but they need to be changed to $\psi$ for
+# inclusion in Latex.
 const doi_title_subs = Dict(
-    "10.1103/PhysRevA.88.032112" => "Experimental refutation of a class of ψ-epistemic models"
+    "10.1103/PhysRevA.88.032112"
+    => "Experimental refutation of a class of ψ-epistemic models",
+    "10.1103/PhysRevLett.111.090402"
+    => "No-Go Theorems for ψ-Epistemic Models Based on a Continuity Assumption"
 )
 
 function lookup_doi(doi)
@@ -278,7 +317,7 @@ function lookup_doi(doi)
 
     if !haskey(entry, "pages")
         if haskey(missing_pages, doi)
-            entry["pages"] = doi
+            entry["pages"] = missing_pages[doi]
         elseif contains(entry["publisher"], "American Physical Society")
             entry["pages"] = last(split(doi, '.'))
         else
@@ -427,23 +466,34 @@ function unique_labels!(entries)
 
     for e in entries
         label = e["label"]
+        lclabel = lowercase(label)
 
-        if !haskey(labels, label)
-            labels[label] = 1
+        if !haskey(labels, lclabel)
+            labels[lclabel] = 0
         else
-            new_label = label * "_" * string(labels[label])
-            labels[label] += 1
+            labels[lclabel] += 1
+            new_label = label * "_" * string(labels[lclabel])
+            new_lclabel = lowercase(new_label)
 
-            while haskey(labels, new_label)
-                labels[new_label] += 1
-                new_label = label * "_" * string(labels[label])
-                labels[label] += 1
+            while haskey(labels, new_lclabel)
+                labels[lclabel] += 1
+                new_label = label * "_" * string(labels[lclabel])
+                new_lclabel = lowercase(new_label)
             end
 
-            labels[new_label] = 1
+            labels[new_lclabel] = 0
             e["label"] = new_label
         end
     end
+
+    return entries
+end
+
+function unique_labels(entries)
+    entries = deepcopy(entries)
+    unique_labels!(entries)
+
+    return entries
 end
 
 
@@ -451,11 +501,19 @@ end
 """
 Generate BibTeX file from entries or ArXiv search, e.g.
 
-  bibfile(\"au:Massar_S\", "pubs_massar.bib")
+  bibfile(\"au:Massar_S\", "massar_s.bib")
 """
-function bibfile(entries, dest::IO)
+function bibfile(entries, dest::IO; unique_lbls::Bool=false)
     if entries isa String
         entries = arxiv_entries(entries)
+
+        if unique_lbls
+            unique_labels!(entries)
+        end
+    elseif isempty(entries)
+        return
+    elseif unique_lbls
+        entries = unique_labels(entries)
     end
 
     (e, entries) = Iterators.peel(entries)
@@ -468,12 +526,12 @@ function bibfile(entries, dest::IO)
     end
 end
 
-function bibfile(entries, filename)
+function bibfile(entries, filename::String; unique_lbls::Bool=false)
     open(filename, "w") do f
-        bibfile(entries, f)
+        bibfile(entries, f, unique_lbls=unique_lbls)
     end
 end
 
-function bibfile(entries)
-    bibfile(entries, stdout)
+function bibfile(entries; unique_lbls::Bool=false)
+    bibfile(entries, stdout, unique_lbls=unique_lbls)
 end

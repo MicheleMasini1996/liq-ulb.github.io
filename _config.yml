@@ -20,6 +20,9 @@ include:
   - .htaccess
   - _pages
 
+exclude:
+  - utils/
+
 sass:
   sass_dir: _sass
 
