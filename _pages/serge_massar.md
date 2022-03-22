@@ -24,11 +24,11 @@ permalink: /serge_massar/
         </tr>
         <tr>
           <td>Room</td>
-          <td>2-N7-107</td>
+          <td>2-N4-214</td>
         </tr>
         <tr>
           <td></td>
-          <td>Campus Plaine Building NO, level 7</td>
+          <td>Campus Plaine Building NO, level 4</td>
         </tr>
       </table>
     </td>
