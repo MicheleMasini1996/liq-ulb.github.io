@@ -1,6 +1,15 @@
 {{ reference }}
 
+{% if entry.doi %}
+{% capture url %}https://doi.org/{{ entry.doi }}{% endcapture %}
+{% capture urltext %}doi:{{ entry.doi }}{% endcapture %}
+{% elsif entry.url %}
+{% assign url = entry.url %}
+{% assign urltext = entry.url %}
+{% endif %}
+
 <p>
+{%if url %}<a href="{{ url }}">{{ urltext }}</a>{% if entry.eprint %};{% endif %}{% endif %}
 {% if entry.eprint %}
 {% if entry.archiveprefix %}
 {% assign archive = entry.archiveprefix %}
@@ -9,9 +18,5 @@
 {% assign archive = "arXiv" %}
 {% endif %}
 <a href="https://{{ archdomain }}.org/abs/{{ entry.eprint }}">{{ archive }}:{{ entry.eprint }}{% unless entry.eprint contains "/" %}{% if entry.primaryclass %} [{{ entry.primaryclass }}]{% endif %}{% endunless %}</a>
-{% elsif entry.doi %}
-<a href="https://doi.org/{{ entry.doi }}">doi:{{ entry.doi }}</a>
-{% elsif entry.url %}
-<a href="{{ entry.url }}">{{ entry.url }}</a>
 {% endif %}
 </p>
