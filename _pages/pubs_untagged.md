@@ -21,7 +21,7 @@ The tags used are the following:
 <table>
 {% for t in site.data.pubtopics %}
 <tr>
-  <td style="font-family:'Lucida Console', monospace">{{ t.tag }}</td>
+  <td style="font-family:'Lucida Console', monospace; font-size:10;">{{ t.tag }}</td>
   <td>&nbsp;:&nbsp;&nbsp;</td>
   <td>{{ t.title }}</td>
 </tr>
@@ -47,18 +47,28 @@ of the above tags or are missing the "tag" attribute in the BibTeX entirely.
 <!-- Tab content -->
 <div id="all" class="tabcontent">
   {% assign untagged_query = "" | split: "," %}
-  {% for t in site.data.pubtopics %}
-    {% assign exclude_tag = t.tag | prepend: "tag!~" %}
-    {% assign untagged_query = untagged_query | push: exclude_tag %}
+  {% for topic in site.data.pubtopics %}
+    {% assign tags = topic.tag | split: "," %}
+    {% for tag in tags %}
+      {% assign exclude_tag = tag | prepend: "tag!~" %}
+      {% assign untagged_query = untagged_query | push: exclude_tag %}
+    {% endfor %}
   {% endfor %}
   {% assign untagged_query = untagged_query | join: " && " %}
   {% bibliography --query @*[{{ untagged_query }}] %}
 </div>
 
-{% for t in site.data.pubtopics %}
-{% if t.tag %}
-<div id="{{ t.tag }}" class="tabcontent">
-  {% bibliography --query @*[tag!~{{ t.tag }}] %}
+{% for topic in site.data.pubtopics %}
+{% if topic.tag %}
+<div id="{{ topic.tag }}" class="tabcontent">
+  {% assign tag_queries = "" | split: "," %}
+  {% assign tags = topic.tag | split: "," %}
+  {% for tag in tags %}
+    {% assign tagq = tag | prepend: "tag!~" %}
+    {% assign tag_queries = tag_queries | push: tagq %}
+  {% endfor %}
+  {% assign tag_query = tag_queries | join: " && " %}
+  {% bibliography --query @*[{{ tag_query }}] %}
 </div>
 {% endif %}
 {% endfor %}

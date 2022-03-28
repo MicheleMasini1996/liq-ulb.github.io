@@ -11,10 +11,11 @@ explained [here](http://www.allanlab.org/aboutwebsite.html).
 ## Publications
 
 Publications are classified into the topics listed in the
-`_data/pubtopics.yml` depending on how they are tagged in the Bibtex entries
-in the `_bibliography/` folder.
+`_data/pubtopics.yml` file depending on how they are tagged in the Bibtex
+entries in the `_bibliography/` folder.
 
-The following page shows untagged papers, if there are any: https://liq-ulb.github.io/_site/pubs_untagged/.
+The following page shows untagged papers, if there are any:
+https://liq-ulb.github.io/_site/pubs_untagged/.
 
 
 
