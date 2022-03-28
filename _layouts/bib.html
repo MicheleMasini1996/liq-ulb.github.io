@@ -1,22 +1,23 @@
 {{ reference }}
 
+{% assign url = false %}
 {% if entry.doi %}
-{% capture url %}https://doi.org/{{ entry.doi }}{% endcapture %}
-{% capture urltext %}doi:{{ entry.doi }}{% endcapture %}
+  {% capture url %}https://doi.org/{{ entry.doi }}{% endcapture %}
+  {% capture urltext %}doi:{{ entry.doi }}{% endcapture %}
 {% elsif entry.url %}
-{% assign url = entry.url %}
-{% assign urltext = entry.url %}
+  {% assign url = entry.url %}
+  {% assign urltext = entry.url %}
 {% endif %}
 
 <p>
 {%if url %}<a href="{{ url }}">{{ urltext }}</a>{% if entry.eprint %};{% endif %}{% endif %}
 {% if entry.eprint %}
-{% if entry.archiveprefix %}
-{% assign archive = entry.archiveprefix %}
-{% assign archdomain = archive | downcase %}
-{% else %}
-{% assign archive = "arXiv" %}
-{% endif %}
-<a href="https://{{ archdomain }}.org/abs/{{ entry.eprint }}">{{ archive }}:{{ entry.eprint }}{% unless entry.eprint contains "/" %}{% if entry.primaryclass %} [{{ entry.primaryclass }}]{% endif %}{% endunless %}</a>
+  {% if entry.archiveprefix %}
+    {% assign archive = entry.archiveprefix %}
+    {% assign archdomain = archive | downcase %}
+  {% else %}
+    {% assign archive = "arXiv" %}
+  {% endif %}
+  <a href="https://{{ archdomain }}.org/abs/{{ entry.eprint }}">{{ archive }}:{{ entry.eprint }}{% unless entry.eprint contains "/" %}{% if entry.primaryclass %} [{{ entry.primaryclass }}]{% endif %}{% endunless %}</a>
 {% endif %}
 </p>

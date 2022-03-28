@@ -12,8 +12,9 @@ permalink: /pubs_untagged/
 
 Group publications missing all or a specific tag. This is nearly the opposite
 of what the main [publications page]({{ site.url }}{{ site.baseurl
-}}/publications/). It is meant to help identify papers that haven't been
-tagged yet or haven't been included in a topic they should be included in.
+}}/publications/) shows. It is meant to help identify papers that haven't
+been tagged yet or haven't been included in a topic they should be included
+in.
 
 The tags used are the following:
 
@@ -21,7 +22,7 @@ The tags used are the following:
 {% for t in site.data.pubtopics %}
 <tr>
   <td style="font-family:'Lucida Console', monospace">{{ t.tag }}</td>
-  <td>:&nbsp;</td>
+  <td>&nbsp;:&nbsp;&nbsp;</td>
   <td>{{ t.title }}</td>
 </tr>
 {% endfor %}
