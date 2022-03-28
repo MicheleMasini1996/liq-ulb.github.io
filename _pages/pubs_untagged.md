@@ -29,8 +29,9 @@ The tags used are the following:
 </table><br />
 
 The tabs below show publications that haven't been marked with the
-corresponding tag. The tab "Untabbed" shows papers that either don't have any
-of the above tags or are missing the "tag" attribute in the BibTeX entirely.
+corresponding tag. The tab "Untagged" shows papers (if any) that either don't
+have any of the above tags or are missing the "tag" attribute in the BibTeX
+entirely.
 
 <br>
 
@@ -41,7 +42,7 @@ of the above tags or are missing the "tag" attribute in the BibTeX entirely.
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks active" onclick="pubgroup(event, 'all')">Untagged</button>
-  {% for t in site.data.pubtopics %}{% if t.tag %}<button class="tablinks" onclick="pubgroup(event, '{{ t.tag }}')">{{ t.title }}</button>{% endif %}{% endfor %}
+  {% for t in site.data.pubtopics %}{% if t.tag %}<button class="tablinks" onclick="pubgroup(event, '{{ t.tag }}')">!{{ t.title }}</button>{% endif %}{% endfor %}
 </div>
 
 <!-- Tab content -->

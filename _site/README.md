@@ -8,7 +8,9 @@ explained [here](http://www.allanlab.org/aboutwebsite.html).
 
 
 
-## Publications
+## Structure
+
+### Publications
 
 Publications are classified into the topics listed in the
 `_data/pubtopics.yml` file depending on how they are tagged in the Bibtex
@@ -19,7 +21,9 @@ https://liq-ulb.github.io/_site/pubs_untagged/.
 
 
 
-## Local development
+## Development and deployment
+
+### Local development
 
 Make sure you have Ruby installed. E.g., on Ubuntu:
 ```
@@ -58,7 +62,7 @@ http://localhost:4000/_site/ to see your local version of the site.
 
 
 
-## Building
+### Building
 
 Run
 ```
