@@ -70,6 +70,7 @@ author_subs = Dict(
     "K. Phan Huy" => "Phan Huy, K.",
     "Kien Phan Huy" => "Phan Huy, Kien",
     "M. B. Plenio" => "Plenio, M. B.",
+    "Martin B. Plenio" => "Plenio, Martin B."
     "E. S. Polzik" => "Polzik, E. S.",
     "Marco Túlio Quintino" => "Quintino, Marco Túlio",
     "Ana Belén Sainz" => "Sainz, Ana Belén",
