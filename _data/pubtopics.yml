@@ -1,8 +1,8 @@
 - title: Quantum information
-  class: quant-ph
+  tag: qinfo
 
 - title: Quantum and nonlinear optics
-  class: physics.optics
+  tag: optics
 
 - title: Neuromorphic computing and other topics
-  class: cs.
+  tag: comp
