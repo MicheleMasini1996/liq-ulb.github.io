@@ -3,7 +3,7 @@ title: "LIQ - Vacancies"
 layout: textlay
 excerpt: "Vacancies"
 sitemap: false
-permalink: /vacancies
+permalink: /vacancies/
 ---
 
 # Open positions

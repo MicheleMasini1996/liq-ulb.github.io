@@ -1,11 +1,14 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import sys
 from getpass import getpass
 from pysftp import Connection
 from paramiko.ssh_exception import AuthenticationException
 
+
+
 source_dir = '_site/'
 dest_dir = 'public_html/'
+
 
 
 try:

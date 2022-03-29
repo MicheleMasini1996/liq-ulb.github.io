@@ -3,7 +3,7 @@ title: "LIQ - Teaching"
 layout: textlay
 excerpt: "Teaching"
 sitemap: false
-permalink: /teaching
+permalink: /teaching/
 ---
 
 ## Courses

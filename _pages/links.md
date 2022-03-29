@@ -3,7 +3,7 @@ title: "LIQ - Links"
 layout: textlay
 excerpt: "Links"
 sitemap: false
-permalink: /links
+permalink: /links/
 ---
 
 # Links
