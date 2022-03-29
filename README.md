@@ -1,7 +1,7 @@
 # LIQ website
 
 Website of the
-(Laboratoire d'Information Quantique)[https://liq-ulb.github.io/_site/].
+[Laboratoire d'Information Quantique](https://liq.ulb.ac.be/).
 
 This site was made by forking and adapting the website of Allan Lab as
 explained [here](http://www.allanlab.org/aboutwebsite.html). The layout of
