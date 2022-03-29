@@ -1,10 +1,12 @@
 # LIQ website
 
-Website of the Laboratoire d'Information Quantique. The version here can be
-seen at https://liq-ulb.github.io/_site/.
+Website of the
+(Laboratoire d'Information Quantique)[https://liq-ulb.github.io/_site/].
 
 This site was made by forking and adapting the website of Allan Lab as
-explained [here](http://www.allanlab.org/aboutwebsite.html).
+explained [here](http://www.allanlab.org/aboutwebsite.html). The layout of
+the members page is based on the team page of
+[Quantum Group @ UGhent](https://www.quantumghent.com/).
 
 
 
@@ -17,7 +19,7 @@ Publications are classified into the topics listed in the
 entries in the `_bibliography/` folder.
 
 The following page shows untagged papers, if there are any:
-https://liq-ulb.github.io/_site/pubs_untagged/.
+https://liq.ulb.ac.be/pubs_untagged/.
 
 
 
@@ -58,7 +60,7 @@ looks like as you make edits to it:
 $ bundle exec jekyll serve
 ```
 When that is running, open your favourite web browser and visit
-http://localhost:4000/_site/ to see your local version of the site.
+http://localhost:4000/ to see your local version of the site.
 
 
 
@@ -68,11 +70,25 @@ Run
 ```bash
 $ jekyll build
 ```
-inside the project directory to rebuild the site. To generate a version of
-the site that will be hosted somewhere other than github, first edit the
-lines
-```yaml
-baseurl: "/_site"
-url: "https://liq-ulb.github.io"
+to (re)build the site locally. This will put the site in the `_site/` folder.
+
+
+
+### Deploying
+
+There's a Python script `deploy.py` included in the project directory that
+automates the task of updating the LIQ website on the ULB server. It depends
+on a package `pysftp` which you will probably have to install the first time
+you want to use it:
+```bash
+$ pip install pysftp
 ```
-in `_config.yml` accordingly.
+
+To update the website run:
+```bash
+$ ./deploy.py user@host
+```
+using your username and the destination hostname in place of `user` and
+`host`, and give your password when asked. This will clear the contents
+of the folder `public_html/` on the remote host and then copy the contents of
+`_site/` on your computer into `public_html/` on the remote host.

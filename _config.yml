@@ -13,8 +13,8 @@ title: Laboratoire d'Information Quantique
 email:
 description: > # this means to ignore newlines until "baseurl:"
   Website of the Laboratoire d'Information Quantique at ULB.
-baseurl: "/_site"
-url: "https://liq-ulb.github.io"
+baseurl: ""
+url: "https://liq.ulb.ac.be"
 
 include:
   - .htaccess
@@ -22,6 +22,9 @@ include:
 
 exclude:
   - utils/
+  - _site/
+  - README.md
+  - deploy.py
 
 sass:
   sass_dir: _sass
