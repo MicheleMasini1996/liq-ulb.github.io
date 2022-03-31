@@ -60,6 +60,6 @@ Recently he has been devoting increasing time to artificial intelligence, machin
 
 Serge Massar also co-authored 2 papers in biology on the origin of the DNA code and of proteins.
 
-[CV](http://homepages.ulb.ac.be/~smassar/CV-short-December2018.pdf)
+[CV]({{ site.url}}{{ site.baseurl }}/docs/CV-short-March2022.pdf)
 
-[List of Publications](http://homepages.ulb.ac.be/~smassar/PublicationsSergeMassar10-18.pdf)
+[List of Publications]({{ site.url }}{{ site.baseurl }}/docs/Publications_SMassar-06-21.pdf)

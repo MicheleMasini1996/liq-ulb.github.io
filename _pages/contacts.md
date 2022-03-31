@@ -52,7 +52,7 @@ Our offices and labs are located on the two main ULB campuses. Roughly the theor
 
 Laboratoire d'Information Quantique, CP124 <br/>
 Université libre de Bruxelles <br/>
-Av. Franklin Roosevelt 55 <br/>
+Av. Franklin Roosevelt 50 <br/>
 1050 Bruxelles, Belgium
 
 <table>
