@@ -17,7 +17,7 @@ Salary is 2.607,64€ net per month. Duration is two years (possibly renewable).
 
 To apply, please send a CV and recommendation letters to Stefano Pironio (stefano.pironio@ulb.be).
 
-**Share this opening! **
+**Share this opening!**
 
 
 
