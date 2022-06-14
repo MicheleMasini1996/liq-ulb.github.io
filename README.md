@@ -84,11 +84,24 @@ you want to use it:
 $ pip install pysftp
 ```
 
+If you've never logged into the server where the website is hosted before
+from the computer you are using, log in to the host using sftp and exit once
+to add it to your local list of SSH hosts:
+```bash
+sftp [user]@[host]
+```
+using your username and the destination hostname in place of `[user]` and
+`[host]`, confirm that you want to continue connecting if/when asked, then
+press ctrl-D to exit.
+
 To update the website run:
 ```bash
-$ ./deploy.py user@host
+$ ./deploy.py [user]@[host]
 ```
-using your username and the destination hostname in place of `user` and
-`host`, and give your password when asked. This will clear the contents
+and give your password when asked. This will clear the contents
 of the folder `public_html/` on the remote host and then copy the contents of
 `_site/` on your computer into `public_html/` on the remote host.
+
+If you get an error message to do with SSH and `No hostkey for host [host]
+found` then log in directly with sftp and logout once as explained
+above.
