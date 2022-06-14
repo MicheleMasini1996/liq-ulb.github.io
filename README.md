@@ -103,5 +103,5 @@ of the folder `public_html/` on the remote host and then copy the contents of
 `_site/` on your computer into `public_html/` on the remote host.
 
 If you get an error message to do with SSH and `No hostkey for host [host]
-found` then log in directly with sftp and logout once as explained
+found` then log in directly with sftp and log out once as explained
 above.
