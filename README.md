@@ -26,10 +26,10 @@ bibentries. To be able to use `bibutils.jl`, you need to install `AnyAscii`
 and `PyCall` in Julia and `arxiv` for Python (e.g. with `pip install --user
 arxiv`).
 
-In `bibutils.jl`, the main function you're likely to want to use are
+In `bibutils.jl`, the main functions you're likely to want to use are
 `bibfile()`and possibly `arxiv_entries()`. The former prints BibTeX entries
 for ArXiv papers matching a given search string, with additional information
-gained from the preprints' DOIs for those that have them.
+gained from the preprints' DOIs for those that have them. Example:
 ```julia
 julia> include("bibutils.jl");
 
