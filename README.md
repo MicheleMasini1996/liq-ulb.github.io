@@ -21,6 +21,53 @@ entries in the `_bibliography/` folder.
 The following page shows untagged papers, if there are any:
 https://liq.ulb.ac.be/pubs_untagged/.
 
+The repository folder `utils/` contains code that can help with generating
+bibentries. To be able to use `bibutils.jl`, you need to install `AnyAscii`
+and `PyCall` in Julia and `arxiv` for Python (e.g. with `pip install --user
+arxiv`).
+
+In `bibutils.jl`, the main function you're likely to want to use are
+`bibfile()`and possibly `arxiv_entries()`. The former prints BibTeX entries
+for ArXiv papers matching a given search string, with additional information
+gained from the preprints' DOIs for those that have them.
+```julia
+julia> include("bibutils.jl");
+
+julia> bibfile("0803.4290")
+@article{Navascues_2008,
+  title =        {A convergent hierarchy of semidefinite programs
+                  characterizing the set of quantum correlations},
+  author =       {Navascués, Miguel and Pironio, Stefano and Acín, Antonio},
+  journal =      {New Journal of Physics},
+  publisher =    {IOP Publishing},
+  volume =       {10},
+  number =       {7},
+  pages =        {073013},
+  year =         {2008},
+  month =        {Jul},
+  doi =          {10.1088/1367-2630/10/7/073013},
+  issn =         {1367-2630},
+  archivePrefix ={ar{X}iv},
+  eprint =       {0803.4290},
+  primaryClass = {quant-ph}
+}
+
+julia> bibfile("0803.4290", "filename.bib")     # Write same output as above
+                                                # in file "filename.bib".
+```
+In this case there is, unsurprisingly, only one entry because the search
+string is the ArXiv ID of a specific preprint.
+
+The function `arxiv_entries()` looks up and returns the metainformation about
+preprints (in the form of an array of dictionaries) without printing it. The
+output of this function can be passed to `bibfile()` to then generate the
+BibTeX entries. In other words, you can get the metainformation about
+preprints and print it in two separate steps like this:
+```julia
+entries = arxiv_entries("0803.4290")
+bibfile(entries, "filename.bib")
+```
+
 
 
 ## Development and deployment
@@ -56,7 +103,7 @@ $ bundle install
 ```
 When that's done you can start a local server so you can see what the site
 looks like as you make edits to it:
-```bash
+```
 $ bundle exec jekyll serve
 ```
 When that is running, open your favourite web browser and visit
