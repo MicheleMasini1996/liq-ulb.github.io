@@ -6,6 +6,7 @@ sitemap: false
 permalink: /vacancies/
 ---
 
+<!--
 ## One PhD and two postdocs positions in the group of Stefano Pironio
 The group of Stefano Pironio is opening one PhD position and two postdocs positions to work on quantum correlations, quantum networks, device-independent applications, and the certification of quantum systems.
 
@@ -18,8 +19,9 @@ Salary is 2.607,64€ net per month. Duration is two years (possibly renewable).
 To apply, please send a CV and recommendation letters to Stefano Pironio (stefano.pironio@ulb.be).
 
 **Share this opening!**
+-->
 
 
-
-<!-- # Open positions
-There are no open positions at the moment. -->
+ 
+# Open positions
+There are no open positions at the moment.
