@@ -57,7 +57,13 @@
   scholar: I1MBODYAAAAJ
   github: MicheleMasini1996
   orcid: 0000-0001-9965-7157
-
+  
+- name: Abhishek Mishra
+  photo: abhishek.jpg
+  role: phd
+  info: PhD student since 2022
+  github: abh1mishra
+  
 - name: Romain Morleghem
   photo: romain.jpg
   role: phd
